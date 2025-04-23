@@ -1,41 +1,3 @@
-# VARIABLES
-
-variable "resource_group_name" {
-	type = string
-}
-
-variable "location" {
-	type = string
-	default = "koreasouth"
-}
-
-variable "vnet_cidr_range" {
-	type = list(string)
-	default = ["10.0.0.0/16"]
-}
-
-variable "subnet_prefixes" {
-	type = list(string)
-	default = ["10.0.0.0/24", "10.0.1.0/24"]
-}
-
-variable "subnet_names" {
-	type = list(string)
-	default = ["web", "databases"]
-}
-
-variable "subscription_id" {
-	default = ""
-}
-
-# PROVIDERS
-
-provider "azurerm" {
-	features {}
-	subscription_id = var.subscription_id	
-	resource_provider_registrations = "none"
-}
-
 # RESOURCES
 
 module "vnet-main" {
@@ -54,8 +16,3 @@ module "vnet-main" {
 	}
 }
 
-# OUTPUTS
-
-output "vnet_id" { 
-	value = module.vnet-main.vnet_id
-}

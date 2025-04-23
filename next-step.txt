@@ -1,0 +1,7 @@
+	export TF_VAR_sec_vnet_id=security 
+	export TF_VAR_sec_sub_id=180f7e99-985b-4c30-9eae-9d0552a0d130
+	export TF_VAR_sec_client_id=6b28220d-0435-40c2-bc0f-02cc0548141b
+	export TF_VAR_sec_principal_id=15b0bb3d-152a-45a8-b3e8-cd72d440aebc
+	export TF_VAR_sec_client_secret='<>?(ai*z0->nXHsc'
+	export TF_VAR_sec_resource_group=security
+	export TF_VAR_sec_tenant_id=3ae363ee-2bdf-4913-a659-cd17c1c8f8ae
