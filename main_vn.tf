@@ -28,7 +28,7 @@ variable "subnet_names" {
 
 provider "azurerm" {
 	features {}
-	#subscription_id = "180f7e99-985b-4c30-9eae-9d0552a0d130"	
+	subscription_id = env("ARM_SUBSCRIPTION_ID")	
 	resource_provider_registrations = "none"
 }
 
